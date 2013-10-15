@@ -41,8 +41,12 @@ extern "C" {
         float distance;
     };
 
-    void xxyymatch(struct STAR *obj, int objlen, struct STAR *ref, int reflen,
-            struct STAR *match);
+    void xxyymatch(int *objid, float *objra, float *objdec, float *objx, float *objy,
+            float *objmag, float *objmage, int *refid, float *refra, float *refdec,
+            float *refx, float *refy, float *refmag, float *refmage, int *matchid,
+            float *matchra, float *matchdec, float *matchx, float *matchy,
+            float *matchmag, float *matchmage, float *matchDistance, int objlen,
+            int reflen);
 
 #ifdef	__cplusplus
 }
