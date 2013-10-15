@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
         obj[i].x = i+0.2;
         obj[i].y = i+0.2;
     }
-    xxyymatch(obj, ref, match, length);
+//    xxyymatch(obj, ref, match, length);
     
     for(i=0; i<length; i++){
         printf("%3d%f %f%3d%f %f %f\n", 

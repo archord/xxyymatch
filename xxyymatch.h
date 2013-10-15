@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-    struct STAR{
+    struct STAR {
         int id;
         float ra;
         float dec;
@@ -22,7 +22,8 @@ extern "C" {
         float mage;
         float distance;
     };
-    struct STAR_MATCH{
+
+    struct STAR_MATCH {
         int id1;
         float ra1;
         float dec1;
@@ -40,7 +41,8 @@ extern "C" {
         float distance;
     };
 
-    void xxyymatch(struct STAR *obj, struct STAR *ref, struct STAR *match, int length);
+    void xxyymatch(struct STAR *obj, int objlen, struct STAR *ref, int reflen,
+            struct STAR *match);
 
 #ifdef	__cplusplus
 }

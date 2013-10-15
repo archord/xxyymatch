@@ -13,18 +13,19 @@
 float lineDistance(struct STAR star1, struct STAR star2) ;
 
 /*
- * 
+ * match与obj的长度相同
  */
-void xxyymatch(struct STAR *obj, struct STAR *ref, struct STAR *match, int length) {
+void xxyymatch(struct STAR *obj, int objlen, struct STAR *ref, int reflen, 
+        struct STAR *match) {
     
     float distance = 0.0, tmp;
     int matchIndex = 0;
 
     int i, j;
-    for (i = 0; i < length; i++) {
+    for (i = 0; i < objlen; i++) {
         distance = lineDistance(obj[i], ref[0]);
         matchIndex = 0;
-        for (j = 1; j < length; j++) {
+        for (j = 1; j < reflen; j++) {
             tmp = lineDistance(obj[i], ref[j]);
             if (tmp < distance) {
                 distance = tmp;
