@@ -1,7 +1,7 @@
 import ctypes
 
 class StarList(ctypes.Structure):
-   _fields_ = [("id",ctypes.c_int),
+   _fields_ = [("id",ctypes.c_float),
               ("ra",ctypes.c_float),
               ("dec",ctypes.c_float),
               ("x",ctypes.c_float),

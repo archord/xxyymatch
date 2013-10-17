@@ -13,7 +13,7 @@ extern "C" {
 #endif
 
     struct STAR {
-        int id;
+        float id;
         float ra;
         float dec;
         float x;
@@ -24,14 +24,14 @@ extern "C" {
     };
 
     struct STAR_MATCH {
-        int id1;
+        float id1;
         float ra1;
         float dec1;
         float x1;
         float y1;
         float mag1;
         float mage1;
-        int id2;
+        float id2;
         float ra2;
         float dec2;
         float x2;
